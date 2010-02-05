@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600" 
+			   xmlns:component="com.pnwrain.iconbutton.component.*">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Style>
+		@namespace s "library://ns.adobe.com/flex/spark";
+		@namespace mx "library://ns.adobe.com/flex/mx";
+		@namespace component "com.pnwrain.iconbutton.component.*";
+		component|IconButton {
+			skinClass: ClassReference("com.pnwrain.iconbutton.skin.IconButtonSkin");	
+		}
+	</fx:Style>
+	<component:IconButton id="importButton" label="Import" icon="@Embed('/assets/icons/ImportDocument.png')" toolTip="Import File"  />
+	<component:IconButton id="saveButton" label="Save"  verticalCenter="0" icon="@Embed('/assets/icons/ClearGreenButton.png')" toolTip="Save File"  />
+</s:Application>
